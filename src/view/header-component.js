@@ -3,10 +3,8 @@ import {createElement} from '../framework/render.js';
 
 function createHeaderComponentTemplate() {
     return (
-        `<header class="board-app__header">
-          <div class="board-app__inner">
-            <h1>Список задач</h1>
-          </div>
+        `<header class="main_header">
+        <h1>Список задач</h1>
         </header>`
       );
 }
@@ -20,7 +18,7 @@ export default class HeaderComponent {
 
   getElement() {
     if (!this.element) {
-        this.element = createElement(this.getTemplate());
+      this.element = createElement(this.getTemplate());
     }
 
 

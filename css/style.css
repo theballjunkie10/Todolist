@@ -1,39 +1,45 @@
-header{
-    background-color: rgb(18, 129, 198);
-    max: width 10000px;
+header {
+    background-color: rgb(33, 127, 204);
+    margin: 0;
 }
-body{
-    background-color: aliceblue;}
+body {
+    background-color: rgb(207, 223, 233);
+    margin: 0;
+}
+
 h1{
-    color:white;
-    padding: 2px;
-    padding-top: 2px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    font-style: oblique;
+    color: white; 
 }
-section.firstsection{
-    width: 315px; ;
-    background-color: rgb(255, 255, 255);
-    margin-top:  15px;
-    margin-left: 15px;
-    margin-right: 25px;
-    border-radius: 20px;
-    padding: 25px;
-    
+
+.new_exercise{
+    width: 350px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:25px;
+    border-radius: 12px;
 }
-#add{
-    background-color:rgb(69, 129, 233);
-    color:white;
-    border-radius: 6px;
-    width: 100px;
-    padding: 6px;
-    border: none;
+.new_exercise label{
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
-section.secondsection{
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% ;
+section.tasks div{
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*10% 10% 10% 10%*/;
     gap: 100px;
+    /* column-count: 4;
+    /* background-color: white; 
+    height: 200px;
+    column-gap: 5px; */
+}
+
+#backlog_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightgray;
+    width: 55px;
 }
 
 ul li{
@@ -43,68 +49,72 @@ ul li{
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     list-style-type:none;
-    border-radius: 6px;
-   
+    border-radius: 5px;
     border-style: hidden hidden hidden solid;
-    border-width: thin thin thin 6px;
-    
-
+    border-width: thin thin thin 5px;
 }
-#title{
-    width:50px;
-    background-color: rgb(210, 209, 209);
-    color:rgb(65, 63, 63);
-    border-radius:  6px;
-    padding: 6px;
-    
+#backlog li{
+    border-left-color: lightgray;
 }
-#ndtitle{
-    width: 100px;
-    background-color:rgb(123, 156, 188);
-    color: rgb(57, 121, 206);
-    border-radius: 6px;
-    padding: 6px;
-}
-#rdtitle{
-    width: 50px;
-    background-color: rgb(194, 239, 194);
-    color: rgb(108, 213, 108);
-    border-radius: 6px;
-    padding: 6px;
-
-}
-#fthtitle{
-    width: 60px;
-    background-color: rgb(248, 191, 191);
-    color: rgb(180, 92, 92);
-    border-radius: 6px;
-    padding: 6px;
-    border-right:30px;
-}
-#log li {
-    border-color: rgb(210, 209, 209);
+#process_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    width: 80px;
+    text-decoration: aqua;
 }
 #process li{
-    border-color:rgb(123, 156, 188) ;
+    border-left-color: lightskyblue;
+}
+#ready_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightgreen;
+    width: 80px;
+    text-decoration: lightgreen;
 }
 #ready li{
-    border-color:rgb(194, 239, 194) ;
+    border-left-color: lightgreen;
 }
-#list li{
-    border-color: rgb(248, 191, 191);
+#basket_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: rgb(232, 173, 173);
+    width: 80px;
+    text-decoration: rgb(239, 139, 139);
 }
-#clear{
-    background-color: rgb(180, 92, 92);
-    color: white;
-    border: 0px;
-    width: 200px;
-    height: 40px;
-    border-radius: 7px;
-    padding: 5px;
-    margin-left: 5px;
-    margin-top: 15px;
+#basket li{
+    border-left-color: rgb(232, 173, 173);
+}
 
+#clear_button{
+    background-color: rgb(181, 103, 103);
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    color: white;
+    border: none;
 }
+#add_button{
+    background-color: rgb(33, 127, 204);
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+    color: white;
+    border: none;
+    display: table-row;
+}
+#task_name{
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: lightgray;
+    height: 30px;
+    border-radius: 8px;
+    margin: 10px 10px 0px 0px;
+    padding: 5px;
+}
+
+/* add-task__button button */

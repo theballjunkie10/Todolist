@@ -5,56 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <title>To Do List</title>
+    <title>Samuel Museteka</title>
 </head>
 <body>
     <header>
-        <h1>Список задача</h1>
+        <h1>Список задач</h1>
     </header>
-
-        <main>
-            <section class="firstsection">
-                <label >Hовая задача</label>
-                <div> 
-                    <input id="todoname" type="text" placeholder="название задачи..">
-                    <button id="add" type="submit"> + добавить </button>
-                </div>
-            </section >
-            <section class="secondsection">
-                <ul id="log">
-                    <div id="title">Бэклог</div>
-                    <li>выучить JS</li>
-                    <li>выучить react</li>
-                    <li>сделать домашку</li>
-
-                </ul>
-                <ul id="process">
-                    <div id="ndtitle"> В процессе </div>
-                    <li>выпить смузи</li>
-                    <li>полить воды</li>
-
-                </ul>
+    <main>
+        <section class="new_exercise">
+            <label>Новая задача</label>
+            <div>
+                <input id="task_name" name="taskName" type="text" placeholder="Название задачи">
+                <button id="add_button" type="submit">+ Добавить</button>
+            </div>
+        </section>
+        <section class="tasks">
+            <ul id="backlog">
+                <div id="backlog_title">Бэклог</div>
+                <li>Выучить JS</li>
+                <li>Выучить React</li>
+                <li>Сделать домашку</li>
+            </ul>
+            <ul id="process">
+                <div id="process_title">В процессе</div>
+                <li>Выпить смузи</li>
+                <li>Попыть воды</li>
+            </ul>
+            <ul id="ready">
+                <div id="ready_title">Готово</div>
+                <li>Позвонить маме</li>
+                <li>Погадить кота</li>
+            </ul>
                 
-                
-                <ul id="ready">
-                    <div id="rdtitle">Готово </div>
-                    <li>позвонить маме</li>
-                    <li>погладить кота</li>
-                </ul>
-
-                <ul id="list">
-                    <div id="fthtitle">Корзина </div>
-                    <li>сходить погулять </li>
-                    <li>прочитать войну и мир</li>
-                    <button id="clear" type="submit">X Очистить</button>
-                </ul>
-                
-
-            </section>
-        </main>
-        <footer>
-
-        </footer>
-    
+            <ul id="basket">
+                <div id="basket_title">Корзина</div>
+                <li>Сходить погулять</li>
+                <li>Прочитать Войну и Мир</li>
+                <button id="clear_button" type="submit">X Очистить</button>
+            </ul>
+        </section>
+    </main>
 </body>
+<script src="/src/main.js"></script>
 </html>
