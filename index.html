@@ -1,60 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <title>To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Список задач</title>
 </head>
-<body>
-    <header>
-        <h1>Список задача</h1>
-    </header>
 
-        <main>
-            <section class="firstsection">
-                <label >Hовая задача</label>
-                <div> 
-                    <input id="todoname" type="text" placeholder="название задачи..">
-                    <button id="add" type="submit"> + добавить </button>
-                </div>
-            </section >
-            <section class="secondsection">
-                <ul id="log">
-                    <div id="title">Бэклог</div>
-                    <li>выучить JS</li>
-                    <li>выучить react</li>
-                    <li>сделать домашку</li>
 
-                </ul>
-                <ul id="process">
-                    <div id="ndtitle"> В процессе </div>
-                    <li>выпить смузи</li>
-                    <li>полить воды</li>
+<body class="board-app">
 
-                </ul>
-                
-                
-                <ul id="ready">
-                    <div id="rdtitle">Готово </div>
-                    <li>позвонить маме</li>
-                    <li>погладить кота</li>
-                </ul>
 
-                <ul id="list">
-                    <div id="fthtitle">Корзина </div>
-                    <li>сходить погулять </li>
-                    <li>прочитать войну и мир</li>
-                    <button id="clear" type="submit">x очистить</button>
-                </ul>
-                
+  <main class="board-app__main">
+    <div class="board-app__inner">
+      <section class="add-task">
 
-            </section>
-        </main>
-        <footer>
 
-        </footer>
-    
+      </section>
+      <section class="taskboard">
+
+
+      </section>
+    </div>
+  </main>
+  <script src="src/main.js" type="module"></script>
 </body>
 </html>
