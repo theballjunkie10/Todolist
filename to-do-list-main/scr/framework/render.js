@@ -11,7 +11,7 @@ const RenderPosition = {
     newElement.innerHTML = template;
   
   
-    return newElement;
+    return newElement.firstElementChild;
   }
   
   
@@ -21,4 +21,3 @@ const RenderPosition = {
   
   
   export {RenderPosition, createElement, render};
-  

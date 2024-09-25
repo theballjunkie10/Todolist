@@ -1,12 +1,12 @@
-import {createElement} from './render.js';
+import {createElement} from '../framework/render.js';
 
 
-function createTaskListComponent() {
+function createHeaderComponentTemplate() {
     return (
-        `<header class="board-app__header">
-          <div class="board-app__inner">
+        `<header class="main_header">
+        
             <h1>Список задач</h1>
-          </div>
+          
         </header>`
       );
 }
